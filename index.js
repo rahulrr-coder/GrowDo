@@ -8,12 +8,9 @@ const app = express();
 app.use(express.json());
 
 // Connect to MongoDB Atlas
-mongoose.connect(process.env.MONGODB_URI, { 
-    useNewUrlParser: true, 
-    useUnifiedTopology: true 
-})
+mongoose.connect(process.env.MONGODB_URI,)
 .then(() => console.log('MongoDB Atlas connected!'))
-.catch(err => console.error('MongoDB connection error:', err));
+.catch(err => console.error('MongoDB connection error:', err)); 
 
 // Sample route
 app.get('/', (req, res) => {
