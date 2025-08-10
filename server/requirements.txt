@@ -1,6 +1,26 @@
 blinker==1.9.0
 click==8.2.1
-Flask==3.1.1
+# GrowDo Backend Requirements
+# Core Flask framework and extensions
+Flask==2.3.3
+Flask-SQLAlchemy==3.0.5
+Flask-CORS==4.0.0
+
+# Database
+SQLAlchemy==2.0.21
+
+# Development and testing
+python-dotenv==1.0.0
+
+# Optional: For future authentication
+Flask-JWT-Extended==4.5.3
+Werkzeug==2.3.7
+
+# Optional: For API documentation
+Flask-RESTx==1.2.0
+
+# Optional: For database migrations
+Flask-Migrate==4.0.5
 Flask-MySQLdb==2.0.0
 itsdangerous==2.2.0
 Jinja2==3.1.6
